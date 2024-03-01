@@ -1,0 +1,2 @@
+seed: 25, beam: 1, constrained: False
+test_ko vote precision: 37.40 recall: 35.48 F1 = 36.42

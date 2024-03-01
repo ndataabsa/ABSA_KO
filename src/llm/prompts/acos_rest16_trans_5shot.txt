@@ -1,0 +1,79 @@
+다음을 단어 그대로 한글로 번역해주세요.
+형식은 "문장####[['aspect term', 'aspect category', 'sentiment polarity', 'opinion term'], ...]"으로 구성되어 있습니다.
+[['aspect term', 'aspect category', 'sentiment polarity', 'opinion term'], ...] 안의 단어도 똑같은 형식을 유지해서 번역해주세요.
+'aspect term'과  'opinion term'이 'Null' 이나  'null'일 경우 번역하지 말고 그대로 넣어주세요.
+'aspect term'과  'opinion term'이 'Null' 이나  'null'이 아니면 반드시 문장안에 있는 단어를 넣어주세요.
+'sentiment polarity'는 [긍정적, 부정적, 중립적]으로만 번역해주세요.
+'aspect category'는  ['위치 일반', '음식 가격', '음식 품질', '음식 일반','분위기 일반',
+'서비스 일반', '식당 가격', '음료 가격', '식당 기타', '음료 품질','음료 옵션', '식당 일반', '음식 옵션']으로만 번역해주세요.
+
+결과는 반드시 다음 포맷을 유지해야 합니다.
+"문장####[['aspect term', 'aspect category', 'sentiment polarity', 'opinion term'], ...]"
+
+Text: yum !####[['NULL', 'food quality', 'positive', 'yum']]
+Sentiment Elements: 맛있어!####[['NULL', '음식 품질', '긍정적', '맛있어']]
+
+Text: serves really good sushi .####[['sushi', 'food quality', 'positive', 'good']]
+Sentiment Elements: 정말 좋은 스시를 제공합니다.####[['스시', '음식 품질', '긍정적', '좋은']]
+
+Text: not the biggest portions but adequate .####[['portions', 'food style_options', 'neutral', 'not the biggest'], ['portions', 'food style_options', 'neutral', 'adequate']]
+Sentiment Elements: 음식량은 가장 크지는 않지만 적당합니다.####[['음식량', '음식 옵션', '중립적', '가장 크지 않은'], ['분량', '음식 옵션', '중립적', '적당한']]
+
+Text: green tea creme brulee is a must !####[['green tea creme brulee', 'food quality', 'positive', 'must']]
+Sentiment Elements: 녹차 크림 브륄레는 필수입니다!####[['녹차 크림 브륄레', '음식 품질', '긍정적', '필수']]
+
+Text: it has great sushi and even better service .####[['sushi', 'food quality', 'positive', 'great'], ['service', 'service general', 'positive', 'better']]
+Sentiment Elements: 스시는 훌륭하고 서비스는 더욱 좋습니다.####[['스시', '음식 품질', '긍정적', '훌륭한'], ['서비스', '서비스 일반', '긍정적', '더 좋은']]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
